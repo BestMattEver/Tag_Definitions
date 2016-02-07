@@ -28,34 +28,41 @@ the main enchilada, the whole `document`, that which wraps all the others... exc
 * _content_: _only_ [`<head>`](#head) and [`<body>`](#body)
 * _display_: `block`, maybe? I mean, I can see it... RESEARCH!
 
-## `<!DOCTYPE>`
+### `<!DOCTYPE>`
 
-* _parents_: none, it's the top
-* _content_: _only_ [`<head>`](#head) and [`<body>`](#body)
-* _display_: `block`, maybe? I mean, I can see it... RESEARCH!
+This is required to be put at the top of your HTML document. It tells the browser that what follows will be an html document, and not a pdf for instance.
 
-
-##`< !-- -->`
-
-* _parents_: none, it's the top
-* _content_: _only_ [`<head>`](#head) and [`<body>`](#body)
-* _display_: `block`, maybe? I mean, I can see it... RESEARCH!
+* _parents_:
+* _content_: Doctype has no content, only attributes such as HTML.
+* _display_:
 
 
-##`<head>`
+###`<!-- -->`
 
-* _parents_: none, it's the top
-* _content_: _only_ [`<head>`](#head) and [`<body>`](#body)
-* _display_: `block`, maybe? I mean, I can see it... RESEARCH!
+This is a comment tag. the browser will skip this tag altogether. whatever you put in this tag is only for humans to read.
+
+* _parents_:
+* _content_:
+* _display_: N/A it is not shown.
+
+###`<head>`
+
+the head tag is not visible to users. Its function is to house various meta data about your site and link external files, like stylesheets and fonts.
+
+* _parents_:
+* _content_:
+* _display_: N/A it is not shown
 
 
-##`<body>`
+###`<body>`
 
-* _parents_: none, it's the top
-* _content_: _only_ [`<head>`](#head) and [`<body>`](#body)
-* _display_: `block`, maybe? I mean, I can see it... RESEARCH!
+This tag is used to denote the body of the HTML page. Inside it is where you must put all the content that a user will see on your webpage.
 
-## `<div>`
+* _parents_:
+* _content_:
+* _display_:
+
+###`<div>`
 
 A generic page division that should only be used if no other, more semantic choice is appropriate.
 
@@ -63,35 +70,45 @@ A generic page division that should only be used if no other, more semantic choi
 * _content_: any [Flow Contant][1], palpable content (WTF?)
 * _display_: `block`
 
-##`<span>`
+###`<span>`
+
+Span is similar to a div except that it is an inline element.
 
 * _parents_: anything that accepts [Flow Content][1], which is apparently a lot of things.
 * _content_: any [Flow Contant][1], palpable content (WTF?)
-* _display_: `block`
+* _display_: `inline`
 
-##`<h1>`
+###`<h1>`
 
-* _parents_: anything that accepts [Flow Content][1], which is apparently a lot of things.
-* _content_: any [Flow Contant][1], palpable content (WTF?)
-* _display_: `block`
+this is a tag used for formatting titles. by default, it has a lot of text formatting attributes like making the size of the text larger and more bold.
 
-##`<strong>`
+* _parents_:
+* _content_:
+* _display_:
 
-* _parents_: anything that accepts [Flow Content][1], which is apparently a lot of things.
-* _content_: any [Flow Contant][1], palpable content (WTF?)
-* _display_: `block`
+###`<strong>`
 
-##`<header>`
+This tag makes text bold. Any text content inside this tag is made bold.
 
-* _parents_: anything that accepts [Flow Content][1], which is apparently a lot of things.
-* _content_: any [Flow Contant][1], palpable content (WTF?)
-* _display_: `block`
+* _parents_: Any element that accepts prhasing content or flow content
+* _content_: Flow Content, Phrasing Content
+* _display_: inline
 
-##`<section>`
+###`<header>`
 
-* _parents_: anything that accepts [Flow Content][1], which is apparently a lot of things.
-* _content_: any [Flow Contant][1], palpable content (WTF?)
-* _display_: `block`
+The header tag is a semantic tag used to denote the header of the page or section. It has no formatting of its own.
+
+* _parents_: Any element that accepts Flow content.
+* _content_: any flow content
+* _display_: not sure...
+
+###`<section>`
+
+section is a semantic tag that has no formatting of its own. It is used to logically organize an html document into relevant... you guessed it... 'sections'.
+
+* _parents_: Any element that accepts flow content. Note that a <section> element must not be a descendant of an <address> element.
+* _content_: Any Flow Content [1]
+* _display_: not sure...
 
 
 
