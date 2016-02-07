@@ -1,5 +1,19 @@
 ### Basic Structure of an HTML Tag
-HTML is composed of written phrases called 'tags'. Tags can be read by internet browsers and converted into webpages. Tags are started by using the less than character (<) then the name of the tag and any attributes it requires then a greater than character (>).   
+HTML is composed of written phrases called 'tags'. Tags can be read by internet browsers and converted into webpages. Tags usually come in pairs: an opening tag, and a closing tag. Opening tags are started by using the less than character (<) then the name of the tag and any attributes it requires then a greater than character (>). A complete opening tag looks like this"
+
+<body>
+
+next, comes all the webpage content you want inside that tag.
+
+<body> This is a basic webpage
+
+and finally, a closing tag is required to tell the browser when to stop structuring the webpage using the tag. A closing tag is written using a less than character (<) then a backslash, then the name of the tag again, and finally a greater than character. A closing tag looks like this:
+
+</body>
+
+so, a fully realized pair of html tags would look like this:
+
+<body> this is a basic webpage </html>
 
 ### Attributes
 
