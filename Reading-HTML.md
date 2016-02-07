@@ -15,10 +15,6 @@ so, a fully realized pair of html tags would look like this:
 
 `<body> this is a basic webpage </html>`
 
-### Attributes
-
-* `class` -- a space-separated list of category names
-*
 
 ### `<html>`
 
@@ -26,65 +22,65 @@ the main enchilada, the whole `document`, that which wraps all the others... exc
 
 * _parents_: none, it's the top
 * _content_: _only_ [`<head>`](#head) and [`<body>`](#body)
-* _display_: `block`, maybe? I mean, I can see it... RESEARCH!
+* _display_: `block`
 
 ### `<!DOCTYPE>`
 
 This is required to be put at the top of your HTML document. It tells the browser that what follows will be an html document, and not a pdf for instance.
 
-* _parents_:
-* _content_: Doctype has no content, only attributes such as HTML.
-* _display_:
+* _parents_: none. it occurs before the HTML tag.
+* _content_: Doctype has no content, only attributes such as 'HTML'.
+* _display_: none
 
 
 ###`<!-- -->`
 
 This is a comment tag. the browser will skip this tag altogether. whatever you put in this tag is only for humans to read.
 
-* _parents_:
-* _content_:
-* _display_: N/A it is not shown.
+* _parents_: none. it is allowed anywhere since browsers ignore it.
+* _content_: text only
+* _display_: none
 
 ###`<head>`
 
 the head tag is not visible to users. Its function is to house various meta data about your site and link external files, like stylesheets and fonts.
 
-* _parents_:
-* _content_:
-* _display_: N/A it is not shown
+* _parents_: <html> only
+* _content_: flow content
+* _display_: none
 
 
 ###`<body>`
 
 This tag is used to denote the body of the HTML page. Inside it is where you must put all the content that a user will see on your webpage.
 
-* _parents_:
-* _content_:
-* _display_:
+* _parents_: <html> only
+* _content_: any flow content
+* _display_: block
 
 ###`<div>`
 
 A generic page division that should only be used if no other, more semantic choice is appropriate.
 
-* _parents_: anything that accepts [Flow Content][1], which is apparently a lot of things.
-* _content_: any [Flow Contant][1], palpable content (WTF?)
+* _parents_: anything that accepts flow content
+* _content_:  also all flow content
 * _display_: `block`
 
 ###`<span>`
 
 Span is similar to a div except that it is an inline element.
 
-* _parents_: anything that accepts [Flow Content][1], which is apparently a lot of things.
-* _content_: any [Flow Contant][1], palpable content (WTF?)
+* _parents_: anything that accepts flow content
+* _content_: also all flow content
 * _display_: `inline`
 
 ###`<h1>`
 
 this is a tag used for formatting titles. by default, it has a lot of text formatting attributes like making the size of the text larger and more bold.
 
-* _parents_:
-* _content_:
-* _display_:
+* _parents_: anything that accepts flow content
+* _content_: any flow content (usually just text?)
+* _display_: block
 
 ###`<strong>`
 
