@@ -1,3 +1,11 @@
+### Basic Structure of an HTML Tag
+HTML is composed of written phrases called 'tags'. Tags can be read by internet browsers and converted into webpages. Tags are started by using the less than character (<) then the name of the tag and any attributes it requires then a greater than character (>).   
+
+### Attributes
+
+* `class` -- a space-separated list of category names
+* . . .
+
 ## `<html>`
 
 the main enchilada, the whole `document`, that which wraps all the others... except for [`<!DOCTYPE>`](#doctype), for some reason.
@@ -6,12 +14,32 @@ the main enchilada, the whole `document`, that which wraps all the others... exc
 * _content_: _only_ [`<head>`](#head) and [`<body>`](#body)
 * _display_: `block`, maybe? I mean, I can see it... RESEARCH!
 
-### Attributes
+## `<!DOCTYPE>`
 
-* `class` -- a space-separated list of category names
-* . . .
+* _parents_: none, it's the top
+* _content_: _only_ [`<head>`](#head) and [`<body>`](#body)
+* _display_: `block`, maybe? I mean, I can see it... RESEARCH!
 
-. . .
+
+##`< !-- -->`
+
+* _parents_: none, it's the top
+* _content_: _only_ [`<head>`](#head) and [`<body>`](#body)
+* _display_: `block`, maybe? I mean, I can see it... RESEARCH!
+
+
+##`<head>`
+
+* _parents_: none, it's the top
+* _content_: _only_ [`<head>`](#head) and [`<body>`](#body)
+* _display_: `block`, maybe? I mean, I can see it... RESEARCH!
+
+
+##`<body>`
+
+* _parents_: none, it's the top
+* _content_: _only_ [`<head>`](#head) and [`<body>`](#body)
+* _display_: `block`, maybe? I mean, I can see it... RESEARCH!
 
 ## `<div>`
 
@@ -20,6 +48,38 @@ A generic page division that should only be used if no other, more semantic choi
 * _parents_: anything that accepts [Flow Content][1], which is apparently a lot of things.
 * _content_: any [Flow Contant][1], palpable content (WTF?)
 * _display_: `block`
+
+##`<span>`
+
+* _parents_: anything that accepts [Flow Content][1], which is apparently a lot of things.
+* _content_: any [Flow Contant][1], palpable content (WTF?)
+* _display_: `block`
+
+##`<h1>`
+
+* _parents_: anything that accepts [Flow Content][1], which is apparently a lot of things.
+* _content_: any [Flow Contant][1], palpable content (WTF?)
+* _display_: `block`
+
+##`<strong>`
+
+* _parents_: anything that accepts [Flow Content][1], which is apparently a lot of things.
+* _content_: any [Flow Contant][1], palpable content (WTF?)
+* _display_: `block`
+
+##`<header>`
+
+* _parents_: anything that accepts [Flow Content][1], which is apparently a lot of things.
+* _content_: any [Flow Contant][1], palpable content (WTF?)
+* _display_: `block`
+
+##`<section>`
+
+* _parents_: anything that accepts [Flow Content][1], which is apparently a lot of things.
+* _content_: any [Flow Contant][1], palpable content (WTF?)
+* _display_: `block`
+
+
 
 . . .
 
